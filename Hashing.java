@@ -1,4 +1,5 @@
 import java.util.HashSet;
+import java.util.Iterator;
 
 public class Hashing{
 
@@ -17,16 +18,23 @@ public class Hashing{
     if (!set.contains(5)){
         System.out.println("Set does not contains 5");
     }
-    set.remove(4);
-    set.remove(1);
+    // set.remove(4);
+    // set.remove(1);
 
     System.out.println("Size of set is: "+ set.size());
 
     //prints all the elements
+    
     System.out.println("Print all elements: "+ set);
 
     //iterator
-    
+    Iterator it= set.iterator();
+    //has next function it checks if there is a next element
+    System.out.println("");
+
+while(it.hasNext()){
+    System.out.print(it.next()+" ");
+      }
 
     }
 }
